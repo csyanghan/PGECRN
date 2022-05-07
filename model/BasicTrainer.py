@@ -108,7 +108,7 @@ class Trainer(object):
             train_epoch_loss = self.train_epoch(epoch)
             t2 = time.time()
             print('train epoch: {}'.format(t2-t1))
-            exit()
+            # exit()
             if self.val_loader == None:
                 val_dataloader = self.test_loader
             else:
@@ -183,7 +183,7 @@ class Trainer(object):
                 y_pred.append(output)
         t3 = time.time()
         print('load: {}, infer: {}'.format(t2-t1, t3-t2))
-        exit()
+        # exit()
         y_true = torch.cat(y_true, dim=0)
         if args.real_value:
             y_pred = torch.cat(y_pred, dim=0)

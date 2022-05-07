@@ -128,7 +128,8 @@ dmypy.json
 .idea/
 
 .vscode
-data/*
+data/PeMSD4
+data/PeMSD8
 experiments
 *.npy
 *.ipynb
